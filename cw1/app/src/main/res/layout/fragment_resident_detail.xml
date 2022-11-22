@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.resident.ResidentDetailFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.material.bottomappbar.BottomAppBar
+            android:id="@+id/fmResidentDetailBottomAppBar"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            app:layout_constraintBottom_toBottomOf="@+id/fmResidentDetailName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/fmResidentDetailName"
+            app:menu="@menu/menu_in_detail"
+            tools:ignore="BottomAppBar" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailDestination"
+            android:layout_width="234dp"
+            android:layout_height="61dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/fmResidentDetailStartDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fmResidentDetailStartDate"
+            app:layout_constraintTop_toTopOf="@+id/fmResidentDetailDestinationLabel" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailDiscription"
+            android:layout_width="235dp"
+            android:layout_height="72dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/fmResidentDetailStartDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fmResidentDetailStartDate"
+            app:layout_constraintTop_toTopOf="@+id/fmResidentDetailDiscriptionLabel" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailOther"
+            android:layout_width="238dp"
+            android:layout_height="62dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/fmResidentDetailStartDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fmResidentDetailStartDate"
+            app:layout_constraintTop_toTopOf="@+id/fmResidentDetailOtherLabel" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailStartDate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/fmResidentDetailStartDateLabel"
+            app:layout_constraintTop_toTopOf="@+id/fmResidentDetailStartDateLabel" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailEndDate"
+            android:layout_width="208dp"
+            android:layout_height="26dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="25dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toEndOf="@+id/fmResidentDetailEndDateLabel"
+            app:layout_constraintTop_toTopOf="@+id/fmResidentDetailEndDateLabel" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailStartDateLabel"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/label_start_date"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmResidentDetailName" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailOwner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmResidentDetailStartDate"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fmResidentDetailStartDate"
+            app:layout_constraintTop_toTopOf="@+id/fmResidentDetailOwnerLabel" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailOwnerLabel"
+            android:layout_width="92dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="84dp"
+            android:text="Requires Risk "
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmResidentDetailName" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailOtherLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="124dp"
+            android:text="Other"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmResidentDetailName" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailEndDateLabel"
+            android:layout_width="100dp"
+            android:layout_height="23dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:text="Total Days"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmResidentDetailName" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailDestinationLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="276dp"
+            android:text="Destination"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmResidentDetailName" />
+
+        <TextView
+            android:id="@+id/fmResidentDetailDiscriptionLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="196dp"
+            android:text="Description"
+            android:textSize="15sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmResidentDetailName" />
+
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fmResidentDetailRequestList"
+            android:name="vn.edu.greenwich.cw_1_sample.ui.request.list.RequestListFragment"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="25dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/fmResidentDetailRequestButton"
+            tools:layout="@layout/fragment_request_list" />
+
+        <Button
+            android:id="@+id/fmResidentDetailRequestButton"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="244dp"
+            android:text="@string/label_add_request"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toEndOf="@+id/fmResidentDetailOwner"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/fmResidentDetailOwnerLabel"
+            app:layout_constraintTop_toBottomOf="@+id/fmResidentDetailOwnerLabel" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
